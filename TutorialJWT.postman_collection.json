@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "277708fc-22e8-4ecb-9ebe-89f683624eb2",
+		"name": "TutorialJWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11911702"
+	},
+	"item": [
+		{
+			"name": "Produto - Listar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Produto - Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/produto"
+			},
+			"response": []
+		},
+		{
+			"name": "Autentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"professor@kge.local\",\r\n    \"password\": \"kge1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/login"
+			},
+			"response": []
+		}
+	]
+}
